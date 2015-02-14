@@ -12,7 +12,6 @@ call compile preprocessFileLineNumbers "\z\addons\dayz_code\init\compiles.sqf";
 
 Add this line right after, like so:
 ```c++
-call compile preprocessFileLineNumbers "\z\addons\dayz_code\init\compiles.sqf";				//Compile regular functions
 call compile preprocessFileLineNumbers "custom\compiles.sqf";							 //Compile custom compiles
 ```
 
