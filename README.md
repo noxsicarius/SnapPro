@@ -1,6 +1,10 @@
 # ![alt text](https://dl.dropboxusercontent.com/u/14423790/snappro.png "Snap Building Pro")
 ___
 
+# Table of Contents:
+* [Using Nox's Debug Menu](https://github.com/noxsicarius/SnapPro/tree/debug-compatible)
+* [NOT Using Nox's Debug Menu](https://github.com/noxsicarius/SnapPro)
+
 ## *Installation* `ver 1.4.1`
 
 Create and add new **compiles.sqf** file (you can reuse an old one if you already have it) and add this to **init.sqf** file:
@@ -10,7 +14,7 @@ Find:
 call compile preprocessFileLineNumbers "\z\addons\dayz_code\init\compiles.sqf";	
 ```
 
-Add this line right after, like so:
+Add this line right after:
 ```c++
 call compile preprocessFileLineNumbers "custom\compiles.sqf";							 //Compile custom compiles
 ```
