@@ -3,9 +3,8 @@ ___
 
 ## *Installation* `ver 1.4.1`
 
-Create and add new **compiles.sqf** file (you can reuse an old one if you already have it) and add this to **init.sqf** file:
 
-Find:
+Open your ***init.sqf*** and find this line:
 ```c++
 call compile preprocessFileLineNumbers "\z\addons\dayz_code\init\compiles.sqf";	
 ```
@@ -15,15 +14,6 @@ Add this line right after:
 call compile preprocessFileLineNumbers "custom\snap_pro\compiles.sqf";	//custom compiles for snap build pro
 ```
 
-**compiles.sqf** can be either found in project folder here on github or you can just create new file and add these lines:
-
-```c++
-if (!isDedicated) then {
-	player_build = compile preprocessFileLineNumbers "custom\snap_pro\player_build.sqf";
-	snap_build = compile preprocessFileLineNumbers "custom\snap_pro\snap_build.sqf";
-	dayz_spaceInterrupt = compile preprocessFileLineNumbers "custom\snap_pro\dayz_spaceInterrupt.sqf";
-};
-```
 Open your **description.ext** (root of your MPMissions folder), add this to the very bottom:
 ```c++
 #include "custom\snap_pro\snappoints.hpp"
